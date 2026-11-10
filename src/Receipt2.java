@@ -16,38 +16,7 @@
 public class Receipt2 {
     public static void main(String[] args) {
 
-        double burgerPrice = 8.50;
-        double friesPrice = 3.00;
-        double sodaPrice = 2.00;
-
-        int burgerQty = 2;
-        int friesQty = 1;
-        int sodaQty = 2;
-
-        
-        double burgerTotal = burgerPrice * burgerQty;
-        double friesTotal = friesPrice * friesQty;
-        double sodaTotal = sodaPrice * sodaQty;
-
-    
-        double subtotal = burgerTotal + friesTotal + sodaTotal;
-
-        
-        double taxRate = 0.08875;
-        double tax = Math.round(subtotal * taxRate * 100.0) / 100.0;
-
-        
-        double grandTotal = subtotal + tax;
-
-        
-        System.out.println("===== RECEIPT =====");
-        System.out.println("Burgers: $" + burgerTotal);
-        System.out.println("Fries: $" + friesTotal);
-        System.out.println("Soda: $" + sodaTotal);
-        System.out.println("-------------------");
-        System.out.println("Subtotal: $" + subtotal);
-        System.out.println("Sales Tax: $" + tax);
-        System.out.println("Grand Total: $" + grandTotal);
+        // Your code here
 
     }
 }
