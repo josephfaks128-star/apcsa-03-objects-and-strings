@@ -18,12 +18,14 @@ public class MadLibs {
         boolean isLying = true;
         char haircut = 'W';
         int realGuard = 1;
-        int dramaticDelay = days / 2;
+        int badIdeas = days / 2;
+        double totalGuard = guard * days;
 
         System.out.println(person + " waits " + days + " days between haircuts, "
-                + "then claims he uses " + guard + " guard, which is " + isLying + ".");
-        System.out.println("The truth is he actually uses " + realGuard + " guard, "
-                + "which makes his haircut plan look like (" + dramaticDelay + " bad ideas) "
-                + "before he shows up with a " + haircut + " hairstyle.");
+                + "then says he uses " + guard + " guard, which is " + isLying + ".");
+        System.out.println("The real number is " + realGuard + " guard, so his whole plan is basically ("
+                + badIdeas + " bad ideas), and he still shows up with a " + haircut + " haircut.");
+        System.out.println("If you add the fake amount, the math says he owes ("
+                + totalGuard + " ridiculous dollars) for a haircut he never planned correctly.");
     }
 }
