@@ -12,16 +12,18 @@
  */
 public class MadLibs {
     public static void main(String[] args) {
-        boolean isPointThreeGuard = true;
-        char haircut = 'W';
-        double guard = 0.3;
-        int days = 180;
         String person = "Mr. Al";
+        int days = 180;
+        double guard = 0.3;
+        boolean isLying = true;
+        char haircut = 'W';
         int realGuard = 1;
+        int dramaticDelay = days / 2;
 
-        System.out.println(person + " waits " + days + " days " + " between each haircut. " + person + " claims he uses " + guard + " guard but is " + isPointThreeGuard + " . " + person + "actually uses a " + realGuard + " guard. Which gives him a " + haircut + " haircut ");
-
-    
-
+        System.out.println(person + " waits " + days + " days between haircuts, "
+                + "then claims he uses " + guard + " guard, which is " + isLying + ".");
+        System.out.println("The truth is he actually uses " + realGuard + " guard, "
+                + "which makes his haircut plan look like (" + dramaticDelay + " bad ideas) "
+                + "before he shows up with a " + haircut + " hairstyle.");
     }
 }
