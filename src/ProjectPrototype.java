@@ -23,10 +23,25 @@ public class ProjectPrototype {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // My project: [name it here]
-        // What it does: [one sentence]
+        // My project: Coffee Brewing Recipe Calculator
+        // What it does: Builds a coffee recipe and calculates its water-to-coffee ratio.
 
-        // Your code here
+        System.out.print("Coffee or bean name: ");
+        String coffeeName = input.nextLine();
+
+        System.out.print("Coffee grounds (grams): ");
+        double coffeeGrams = input.nextDouble();
+
+        System.out.print("Water (milliliters): ");
+        double waterMilliliters = input.nextDouble();
+
+        double waterPerGram = waterMilliliters / coffeeGrams;
+
+        System.out.println("\nCoffee Brewing Recipe");
+        System.out.println("Coffee: " + coffeeName);
+        System.out.println("Coffee grounds: " + coffeeGrams + " g");
+        System.out.println("Water: " + waterMilliliters + " ml");
+        System.out.printf("Water-to-coffee ratio: 1:%.1f%n", waterPerGram);
 
         input.close();
     }
