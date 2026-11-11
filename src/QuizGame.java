@@ -15,7 +15,17 @@ public class QuizGame {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Your code here
+        System.out.print("What is your gamer tag? ");
+        String tag = input.nextLine();
+        System.out.print("What snack are you bringing to the tournament? ");
+        String snack = input.nextLine();
+        System.out.print("What is your secret power? ");
+        String power = input.nextLine();
+
+        System.out.println("Player profile:");
+        System.out.println("Tag: " + tag);
+        System.out.println("Snack: " + snack);
+        System.out.println("Secret power: " + power);
 
         input.close();
     }
