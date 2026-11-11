@@ -17,6 +17,7 @@ public class ScannerTrap {
 
         System.out.print("Enter your age: ");
         int age = input.nextInt();
+        input.nextLine();
 
         System.out.print("Enter your full name: ");
         String name = input.nextLine();
