@@ -13,7 +13,18 @@ public class InteractiveTip {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Your code here
+        System.out.print("Bill: ");
+        double bill = input.nextDouble();
+        System.out.print("Tip percent: ");
+        double tipPercent = input.nextDouble();
+        System.out.print("Number of people: ");
+        int people = input.nextInt();
+
+        double tip = bill * tipPercent / 100;
+        double total = bill + tip;
+        double each = total / people;
+
+        System.out.printf("Tip: $%.2f%nTotal: $%.2f%nEach: $%.2f%n", tip, total, each);
 
         input.close();
     }
