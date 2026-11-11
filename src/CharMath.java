@@ -24,7 +24,7 @@ public class CharMath {
 
         System.out.println("After M = " + (char) ('M' + 1));
 
-        System.out.println("Gap between A and a = " + ('a' - 'A'));
+        System.out.println("Gap between A and a = " + ('a' - 'A')); 
 
     }
 }
